@@ -31,7 +31,7 @@ class MysqlGui:
         self.createColumnTitle('AEROPORTO')
 
         scroll = Scrollbar(self.rowcontainer, orient='vertical')
-        self.rowlistbox = Listbox(self.rowcontainer, yscrollcommand=scroll.set, width=165)
+        self.rowlistbox = Listbox(self.rowcontainer, yscrollcommand=scroll.set, width=163)
         scroll.config(command=self.rowlistbox.yview)
         self.rowlistbox.grid(row=1, column=0)
         scroll.grid(row=1, column=1, rowspan=10, sticky='ns')
@@ -95,7 +95,7 @@ class MysqlGui:
         trechoporaeroporto.grid(row=3, column=2, pady=15)
 
         helpbutton = Button(buttoncontainer, text='AJUDA', command=lambda :self.help(), relief='solid')
-        helpbutton.grid(row=1, column=3)
+        helpbutton.grid(row=3, column=1)
 
         return
 
