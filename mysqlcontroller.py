@@ -9,7 +9,7 @@ class MysqlController:
         host="localhost",
         user="root",
         password=self.passoword,
-        database="COMPAINHA_AEREA")
+        database="COMPANHIA_AEREA")
 
         return
 
